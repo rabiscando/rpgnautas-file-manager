@@ -84,6 +84,14 @@ export class WorldIndexer {
         const blob = new Blob([json], { type: "application/json" });
         const file = new File([blob], "rpgnautas-index.json", { type: "application/json" });
         const filePicker = foundry.applications?.apps?.FilePicker?.implementation || FilePicker;
+        
+        // Ensure directory exists
+        try {
+            await filePicker.browse("data", "modules/rpgnautas-file-manager/data");
+        } catch (e) {
+            await filePicker.createDirectory("data", "modules/rpgnautas-file-manager/data");
+        }
+
         await filePicker.upload("data", "modules/rpgnautas-file-manager/data", file, { notify: false });
         console.log(`RPGNautas File Manager | World Index Saved: ${game.world.id}`);
         return indexData;
