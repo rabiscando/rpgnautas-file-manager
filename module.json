@@ -1,0 +1,52 @@
+{
+  "id": "rpgnautas-file-manager",
+  "title": "RPGNautas File Manager (Standalone)",
+  "description": "Cross-instance file management, protection, and media optimization. Independent of Dashboard Server.",
+  "version": "2.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "RPGNautas",
+      "url": "https://rpgnautas.com.br"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "languages/pt-BR.json"
+    },
+    {
+      "lang": "pt-br",
+      "name": "Português (Brasil)",
+      "path": "languages/pt-BR.json"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "lib-wrapper"
+    }
+  ],
+  "esmodules": [
+    "scripts/api.js",
+    "scripts/indexer.js",
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "url": "https://github.com/rabiscando/rpgnautas-file-manager",
+  "manifest": "https://raw.githubusercontent.com/rabiscando/rpgnautas-file-manager/main/module.json",
+  "download": "https://github.com/rabiscando/rpgnautas-file-manager/archive/refs/tags/v2.1.0.zip",
+  "bugs": "https://github.com/rabiscando/rpgnautas-file-manager/issues",
+  "changelog": "https://github.com/rabiscando/rpgnautas-file-manager/blob/main/CHANGELOG.md",
+  "socket": true
+}

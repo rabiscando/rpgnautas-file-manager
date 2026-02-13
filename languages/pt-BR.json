@@ -1,0 +1,32 @@
+{
+  "RPGNautas.FileManager.Config.Title": "Gerenciamento de Índice Local",
+  "RPGNautas.FileManager.Config.RepairLinks": "Reparo de Links Quebrados",
+  "RPGNautas.FileManager.Config.RepairLinksBtn": "Reparar Links (PNG -> WebP)",
+  "RPGNautas.FileManager.Config.RepairLinksHint": "Verifica todas as referências de imagem do mundo. Se encontrar um link quebrado (404) que tenha uma versão WebP disponível, ele atualizará a referência automaticamente.",
+  "RPGNautas.FileManager.Config.UpdateIndex": "Atualizar Índice Local",
+  "RPGNautas.FileManager.Config.RescanBtn": "Re-escanear Tudo (Incl. Compêndios)",
+  "RPGNautas.FileManager.Config.IndexHint": "Isso gera o arquivo de índice. O escaneamento inclui o mundo e compêndios.",
+  "RPGNautas.FileManager.Config.MassConvert": "Conversão Geral para WebP",
+  "RPGNautas.FileManager.Config.MassConvertBtn": "Converter Tudo para WebP",
+  "RPGNautas.FileManager.Config.MassConvertHint": "Isso buscará todas as imagens no mundo (PNG, JPG) e converterá para WebP, atualizando as fichas automaticamente. **Recomendado fazer BACKUP antes.**",
+  "RPGNautas.FileManager.Config.SaveBtn": "Salvar Configurações",
+  
+  "RPGNautas.FileManager.Notify.Scanning": "RPGNautas: Escaneando mundo e compêndios...",
+  "RPGNautas.FileManager.Notify.IndexUpdated": "RPGNautas: Índice Local Atualizado.",
+  "RPGNautas.FileManager.Notify.Converting": "RPGNautas: Convertendo para WebP...",
+  "RPGNautas.FileManager.Notify.ConfigSaved": "RPGNautas: Configurações salvas com sucesso.",
+  "RPGNautas.FileManager.Notify.Repairing": "RPGNautas: Reparando referências de imagem...",
+  "RPGNautas.FileManager.Notify.RepairComplete": "RPGNautas: Reparo de links concluído! {count} referências atualizadas.",
+  
+  "RPGNautas.FileManager.Notify.ConversionComplete": "RPGNautas: Conversão em massa concluída!",
+  "RPGNautas.FileManager.Dialog.ConfirmRepairTitle": "Confirmar Reparo de Links",
+  "RPGNautas.FileManager.Dialog.ConfirmRepairMsg": "Deseja verificar e ajustar links quebrados que agora possuem versões WebP? Esta operação atualizará as fichas e cenas do mundo.",
+  "RPGNautas.FileManager.Dialog.ConfirmMassConvertTitle": "Confirmar Conversão em Massa",
+  "RPGNautas.FileManager.Dialog.ConfirmMassConvertMsg": "Deseja converter TODAS as imagens do mundo para WebP? Esta operação pode demorar e é altamente recomendado ter um backup do mundo.",
+  
+  "RPGNautas.FileManager.Progress.Converting": "Convertendo: {current}/{total} ({percent}%)",
+  "RPGNautas.FileManager.Progress.EstimatedTime": "Tempo estimado: {time}",
+  "RPGNautas.FileManager.Config.CleanupOrphans": "Limpeza de Originais (Pós-Conversão)",
+  "RPGNautas.FileManager.Config.CleanupOrphansBtn": "Remover Originais Duplicados",
+  "RPGNautas.FileManager.Config.CleanupOrphansHint": "Remove arquivos PNG/JPG que já possuem uma versão WebP com o mesmo nome na mesma pasta. Útil para liberar espaço após conversões manuais ou falhas de deleção."
+}

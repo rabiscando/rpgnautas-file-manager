@@ -1,0 +1,48 @@
+<form class="flexcol">
+    <div class="form-group">
+        <label>{{localize "RPGNautas.FileManager.Config.RepairLinks"}}</label>
+        <div class="form-fields">
+            <button type="button" name="repairLinks">
+                <i class="fas fa-tools"></i> {{localize "RPGNautas.FileManager.Config.RepairLinksBtn"}}
+            </button>
+        </div>
+        <p class="notes">{{localize "RPGNautas.FileManager.Config.RepairLinksHint"}}</p>
+    </div>
+    
+    <hr>
+
+    <div class="form-group">
+        <label>{{localize "RPGNautas.FileManager.Config.UpdateIndex"}}</label>
+        <div class="form-fields">
+            <button type="button" name="scan">
+                <i class="fas fa-sync"></i> {{localize "RPGNautas.FileManager.Config.RescanBtn"}}
+            </button>
+        </div>
+        <p class="notes">{{localize "RPGNautas.FileManager.Config.IndexHint"}}</p>
+    </div>
+
+    <hr>
+
+    <div class="form-group">
+        <label>{{localize "RPGNautas.FileManager.Config.MassConvert"}}</label>
+        <div class="form-fields flexcol">
+            <button type="button" name="massConvert" class="mass-convert-btn">
+                <i class="fas fa-file-image"></i> {{localize "RPGNautas.FileManager.Config.MassConvertBtn"}}
+            </button>
+            <div id="mass-convert-progress" style="display: none; margin-top: 10px;">
+                <div class="conversion-status"></div>
+                <div class="conversion-eta" style="font-size: 0.9em; color: #666;"></div>
+                <div class="progress-bar" style="height: 10px; background: #ddd; border-radius: 5px; overflow: hidden; margin-top: 5px;">
+                    <div class="bar" style="width: 0%; height: 100%; background: #4a90e2; transition: width 0.3s ease;"></div>
+                </div>
+            </div>
+        </div>
+        <p class="notes">{{localize "RPGNautas.FileManager.Config.MassConvertHint"}}</p>
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit">
+            <i class="fa-solid fa-save"></i> {{localize "RPGNautas.FileManager.Config.SaveBtn"}}
+        </button>
+    </footer>
+</form>

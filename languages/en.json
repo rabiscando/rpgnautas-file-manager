@@ -1,0 +1,29 @@
+{
+  "RPGNautas.FileManager.Config.Title": "Local Index Management",
+  "RPGNautas.FileManager.Config.RepairLinks": "Broken Link Repair",
+  "RPGNautas.FileManager.Config.RepairLinksBtn": "Repair Links (PNG -> WebP)",
+  "RPGNautas.FileManager.Config.RepairLinksHint": "Checks all world image references. If it finds a broken link (404) that has a WebP version available, it will update the reference automatically.",
+  "RPGNautas.FileManager.Config.UpdateIndex": "Update Local Index",
+  "RPGNautas.FileManager.Config.RescanBtn": "Rescan Everything (Incl. Compendiums)",
+  "RPGNautas.FileManager.Config.IndexHint": "This generates the index file. Scanning includes world and compendiums.",
+  "RPGNautas.FileManager.Config.MassConvert": "Mass WebP Conversion",
+  "RPGNautas.FileManager.Config.MassConvertBtn": "Convert Everything to WebP",
+  "RPGNautas.FileManager.Config.MassConvertHint": "This will find all images in the world (PNG, JPG) and convert them to WebP, updating documents automatically. **BACKUP recommended first.**",
+  "RPGNautas.FileManager.Config.SaveBtn": "Save Settings",
+  
+  "RPGNautas.FileManager.Notify.Scanning": "RPGNautas: Scanning world and compendiums...",
+  "RPGNautas.FileManager.Notify.IndexUpdated": "RPGNautas: Local Index Updated.",
+  "RPGNautas.FileManager.Notify.Converting": "RPGNautas: Converting to WebP...",
+  "RPGNautas.FileManager.Notify.ConfigSaved": "RPGNautas: Settings saved successfully.",
+  "RPGNautas.FileManager.Notify.Repairing": "RPGNautas: Repairing image references...",
+  "RPGNautas.FileManager.Notify.RepairComplete": "RPGNautas: Link repair complete! {count} references updated.",
+  
+  "RPGNautas.FileManager.Notify.ConversionComplete": "RPGNautas: Mass conversion complete!",
+  "RPGNautas.FileManager.Dialog.ConfirmRepairTitle": "Confirm Link Repair",
+  "RPGNautas.FileManager.Dialog.ConfirmRepairMsg": "Do you want to check and adjust broken links that now have WebP versions? This operation will update world actors and scenes.",
+  "RPGNautas.FileManager.Dialog.ConfirmMassConvertTitle": "Confirm Mass Conversion",
+  "RPGNautas.FileManager.Dialog.ConfirmMassConvertMsg": "Do you want to convert ALL images in the world to WebP? This operation may take some time and it's highly recommended to have a world backup.",
+  
+  "RPGNautas.FileManager.Progress.Converting": "Converting: {current}/{total} ({percent}%)",
+  "RPGNautas.FileManager.Progress.EstimatedTime": "Estimated time: {time}"
+}
