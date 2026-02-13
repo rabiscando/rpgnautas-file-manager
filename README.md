@@ -1,7 +1,7 @@
 # RPGNautas File Manager
 
 ![Foundry VTT](https://img.shields.io/badge/Foundry%20VTT-v12%20--%20v13-orange)
-![Version](https://img.shields.io/badge/version-2.1.0-blue)
+![Version](https://img.shields.io/badge/version-2.1.2-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A comprehensive file management module for Foundry VTT that provides automatic WebP conversion, link repair, and file protection features.
@@ -158,6 +158,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 ## 📝 Changelog
+
+### Version 2.1.2
+
+- ✅ Fixed missing `data` directory creation logic
+- ✅ Added git tracking for data directory
 
 ### Version 2.1.0
 
