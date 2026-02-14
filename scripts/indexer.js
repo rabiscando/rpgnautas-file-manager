@@ -92,7 +92,7 @@ export class WorldIndexer {
             await filePicker.createDirectory("data", "modules/rpgnautas-file-manager/data");
         }
 
-        await filePicker.upload("data", "modules/rpgnautas-file-manager/data", file, { notify: false });
+        await filePicker.upload("data", "modules/rpgnautas-file-manager/data", file, {}, { notify: false });
         console.log(`RPGNautas File Manager | World Index Saved: ${game.world.id}`);
         return indexData;
     } catch (err) {
@@ -116,7 +116,6 @@ export class WorldIndexer {
     });
 
     if (toCheck.length === 0) {
-        ui.notifications.info("RPGNautas: No applicable links to check.");
         return 0;
     }
 
@@ -200,7 +199,6 @@ export class WorldIndexer {
     });
 
     if (toConvert.length === 0) {
-        ui.notifications.info("RPGNautas: No images to convert.");
         return;
     }
 
@@ -286,8 +284,6 @@ export class WorldIndexer {
     const rootFolders = ["assets", "deadlands"];
     const physicalFiles = [];
     
-    ui.notifications.info("RPGNautas: Scanning server for orphaned files...");
-    
     for (const folder of rootFolders) {
         try {
             const folderFiles = await this.browseFileSystemRecursive("data", folder);
@@ -328,7 +324,6 @@ export class WorldIndexer {
     }
 
     if (orphanedFiles.length === 0) {
-        ui.notifications.info("RPGNautas: No orphaned images found on server.");
         console.log("✅ RPGNAUTAS | Server is clean! No orphaned files detected.");
         return { orphanedFiles: [], totalFiles: 0, report: null };
     }

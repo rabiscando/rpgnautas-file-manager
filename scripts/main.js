@@ -58,14 +58,13 @@ function registerWrappers(isV13) {
             !file.name.endsWith('.webp') && 
             !file.name.endsWith('.svg')) {
             try {
-                ui.notifications.info(game.i18n.localize("RPGNautas.FileManager.Notify.Converting"));
                 file = await convertToWebP(file, file.name);
             } catch (err) {
                 console.error("RPGNautas | Conversion error:", err);
             }
         }
         
-        return isV13 ? wrapper(source, path, file, body, options) : wrapper(source, path, file, options);
+        return wrapper(source, path, file, arg5, arg6);
     }, 'WRAPPER');
 
     // DELETE: Protection
@@ -76,7 +75,6 @@ function registerWrappers(isV13) {
             const file = event.currentTarget.dataset.path;
             if (!file) return wrapper(event);
 
-            ui.notifications.info(game.i18n.localize("RPGNautas.FileManager.Notify.CheckingUsage"));
             const checkResult = await FileManagerAPI.checkFiles([file]);
             const fileData = checkResult[file];
 
@@ -120,7 +118,6 @@ class IndexManagementConfig extends FormApplication {
         // Scan Button
         html.find('button[name="scan"]').click(async (ev) => {
             ev.preventDefault();
-            ui.notifications.info(game.i18n.localize("RPGNautas.FileManager.Notify.Scanning"));
             await WorldIndexer.indexWorld();
             ui.notifications.success(game.i18n.localize("RPGNautas.FileManager.Notify.IndexUpdated"));
         });
@@ -135,7 +132,6 @@ class IndexManagementConfig extends FormApplication {
                     yes: {
                         label: "Reparar",
                         callback: async () => {
-                            ui.notifications.info(game.i18n.localize("RPGNautas.FileManager.Notify.Repairing"));
                             const count = await WorldIndexer.repairBrokenLinks();
                             ui.notifications.success(game.i18n.format("RPGNautas.FileManager.Notify.RepairComplete", { count }));
                         }
